@@ -58,7 +58,28 @@ span {
   font-size: 1.8rem;
 }
 
-.back-card {
+.back-card1 {
+  border-radius: 40px !important;
+}
+.back-card2 {
+  border-radius: 40px !important;
+}
+.back-card3 {
+  border-radius: 40px !important;
+}
+.back-card4 {
+  border-radius: 40px !important;
+}
+
+.back-card5 {
+  border-radius: 40px !important;
+}
+
+.back-card6 {
+  border-radius: 40px !important;
+}
+
+.back-card7 {
   border-radius: 40px !important;
 }
 
