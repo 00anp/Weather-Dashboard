@@ -1,0 +1,108 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(100, 100, 100);
+}
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 5.4rem;
+  color: whitesmoke;
+  margin-bottom: 5rem;
+}
+h2 {
+  font-size: 4.2rem;
+  color: rgb(128, 138, 138);
+  margin-bottom: 4rem;
+}
+h3 {
+  font-size: 3.4rem;
+  color: rgb(128, 138, 138);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+p {
+  font-size: 2rem;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+span {
+  font-size: 2rem;
+  color: rgb(128, 138, 138);
+  margin-bottom: 2.4rem;
+}
+
+.temp span {
+  font-weight: 10;
+  font-size: 10rem;
+  letter-spacing: -5px;
+  white-space: nowrap;
+}
+.form-rounded {
+  border-radius: 2rem;
+  font-size: 2rem;
+}
+
+.btn {
+  border-radius: 2rem;
+  font-size: 1.8rem;
+}
+
+.back-card {
+  border-radius: 40px !important;
+}
+
+.city-name {
+    position: absolute;
+    width: 100%;
+}
+
+.city-name span {
+  font-weight: 400;
+  font-size: 36pt;
+  position: relative;
+  top: -60px;
+}
+
+.card-mid {
+  line-height: 0.5;
+}
+
+.icon-container {
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  background: #202020;
+}
+.icon-container img {
+  margin: auto;
+}
+
+.high::before {
+  content:" ";
+  background: url("img/up.svg") no-repeat;
+  width:10px;
+  height: 15px;
+  display: inline-block;
+  position:relative;
+  top: 3px;
+}
+.low::before {
+  content:" ";
+  background: url("img/down.svg") no-repeat;
+  width:10px;
+  height: 15px;
+  display: inline-block;
+  position:relative;
+  top: 3px;
+}
