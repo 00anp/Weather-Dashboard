@@ -138,51 +138,51 @@ displayWeather = (city) =>{
 }
 //function to display forecast below the main card
 displayForecast = (city) =>{
-    const imageName1 = city.list[0].weather[0].icon;
+    const imageName1 = city.list[8].weather[0].icon;
     iconDay1.src = `https://openweathermap.org/img/wn/${imageName1}@2x.png`
-    dateDay1.innerHTML = city.list[0].dt_txt.substring(0,10);
-    forecastDay1.innerHTML = city.list[0].weather[0].description;
-    maxDay1.innerHTML =`Max ${city.list[0].main.temp_max}` ;
-    minDay1.innerHTML = `Min ${city.list[0].main.temp_min}`;
-    windDay1.innerHTML = `Wind Speed: ${city.list[0].wind.speed}MPH`;
+    dateDay1.innerHTML = city.list[8].dt_txt.substring(0,10);
+    forecastDay1.innerHTML = city.list[8].weather[0].description;
+    maxDay1.innerHTML =`Max ${city.list[8].main.temp_max}` ;
+    minDay1.innerHTML = `Min ${city.list[8].main.temp_min}`;
+    windDay1.innerHTML = `Wind Speed: ${city.list[8].wind.speed}MPH`;
     humidityDay1.innerHTML = `Humidity: ${city.list[0].main.humidity}%`;
 
 
-    const imageName2 = city.list[8].weather[0].icon;
+    const imageName2 = city.list[16].weather[0].icon;
     iconDay2.src = `https://openweathermap.org/img/wn/${imageName2}@2x.png`
-    dateDay2.innerHTML = city.list[8].dt_txt.substring(0,10);
-    forecastDay2.innerHTML = city.list[8].weather[0].description;
-    maxDay2.innerHTML =`Max ${city.list[8].main.temp_max}` ;
-    minDay2.innerHTML = `Min ${city.list[8].main.temp_min}`;
-    windDay2.innerHTML = `Wind Speed: ${city.list[8].wind.speed}MPH`;
-    humidityDay2.innerHTML = `Humidity: ${city.list[8].main.humidity}%`;
+    dateDay2.innerHTML = city.list[16].dt_txt.substring(0,10);
+    forecastDay2.innerHTML = city.list[16].weather[0].description;
+    maxDay2.innerHTML =`Max ${city.list[16].main.temp_max}` ;
+    minDay2.innerHTML = `Min ${city.list[16].main.temp_min}`;
+    windDay2.innerHTML = `Wind Speed: ${city.list[16].wind.speed}MPH`;
+    humidityDay2.innerHTML = `Humidity: ${city.list[16].main.humidity}%`;
 
-    const imageName3 = city.list[16].weather[0].icon;
+    const imageName3 = city.list[24].weather[0].icon;
     iconDay3.src = `https://openweathermap.org/img/wn/${imageName3}@2x.png`
-    dateDay3.innerHTML = city.list[16].dt_txt.substring(0,10);
-    forecastDay3.innerHTML = city.list[16].weather[0].description;
-    maxDay3.innerHTML =`Max ${city.list[16].main.temp_max}` ;
-    minDay3.innerHTML = `Min ${city.list[16].main.temp_min}`;
-    windDay3.innerHTML = `Wind Speed: ${city.list[16].wind.speed}MPH`;
-    humidityDay3.innerHTML = `Humidity: ${city.list[16].main.humidity}%`;
+    dateDay3.innerHTML = city.list[24].dt_txt.substring(0,10);
+    forecastDay3.innerHTML = city.list[24].weather[0].description;
+    maxDay3.innerHTML =`Max ${city.list[24].main.temp_max}` ;
+    minDay3.innerHTML = `Min ${city.list[24].main.temp_min}`;
+    windDay3.innerHTML = `Wind Speed: ${city.list[24].wind.speed}MPH`;
+    humidityDay3.innerHTML = `Humidity: ${city.list[24].main.humidity}%`;
 
-    const imageName4 = city.list[24].weather[0].icon;
+    const imageName4 = city.list[32].weather[0].icon;
     iconDay4.src = `https://openweathermap.org/img/wn/${imageName4}@2x.png`
-    dateDay4.innerHTML = city.list[24].dt_txt.substring(0,10);
-    forecastDay4.innerHTML = city.list[24].weather[0].description;
-    maxDay4.innerHTML =`Max ${city.list[24].main.temp_max}` ;
-    minDay4.innerHTML = `Min ${city.list[24].main.temp_min}`;
-    windDay4.innerHTML = `Wind Speed: ${city.list[24].wind.speed}MPH`;
-    humidityDay4.innerHTML = `Humidity: ${city.list[24].main.humidity}%`;
+    dateDay4.innerHTML = city.list[32].dt_txt.substring(0,10);
+    forecastDay4.innerHTML = city.list[32].weather[0].description;
+    maxDay4.innerHTML =`Max ${city.list[32].main.temp_max}` ;
+    minDay4.innerHTML = `Min ${city.list[32].main.temp_min}`;
+    windDay4.innerHTML = `Wind Speed: ${city.list[32].wind.speed}MPH`;
+    humidityDay4.innerHTML = `Humidity: ${city.list[32].main.humidity}%`;
 
-    const imageName5 = city.list[32].weather[0].icon;
+    const imageName5 = city.list[40].weather[0].icon;
     iconDay5.src = `https://openweathermap.org/img/wn/${imageName5}@2x.png`
-    dateDay5.innerHTML = city.list[32].dt_txt.substring(0,10);
-    forecastDay5.innerHTML = city.list[32].weather[0].description;
-    maxDay5.innerHTML =`Max ${city.list[32].main.temp_max}` ;
-    minDay5.innerHTML = `Min ${city.list[32].main.temp_min}`;
-    windDay5.innerHTML = `Wind Speed: ${city.list[32].wind.speed}MPH`;
-    humidityDay5.innerHTML = `Humidity: ${city.list[32].main.humidity}%`;
+    dateDay5.innerHTML = city.list[40].dt_txt.substring(0,10);
+    forecastDay5.innerHTML = city.list[40].weather[0].description;
+    maxDay5.innerHTML =`Max ${city.list[40].main.temp_max}` ;
+    minDay5.innerHTML = `Min ${city.list[40].main.temp_min}`;
+    windDay5.innerHTML = `Wind Speed: ${city.list[40].wind.speed}MPH`;
+    humidityDay5.innerHTML = `Humidity: ${city.list[40].main.humidity}%`;
 
 
 
