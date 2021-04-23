@@ -86,7 +86,7 @@ fetchCoordinates = (city) =>{
 // function to display weather in the main card 
 displayWeather = (city) =>{
     const imageName = city.weather[0].icon;
-    const iconSrc = `http://openweathermap.org/img/wn/${imageName}@2x.png`
+    const iconSrc = `https://openweathermap.org/img/wn/${imageName}@2x.png`
     cityName.textContent= city.name;
     
     cardBody.innerHTML = `
@@ -139,7 +139,7 @@ displayWeather = (city) =>{
 //function to display forecast below the main card
 displayForecast = (city) =>{
     const imageName1 = city.list[0].weather[0].icon;
-    iconDay1.src = `http://openweathermap.org/img/wn/${imageName1}@2x.png`
+    iconDay1.src = `https://openweathermap.org/img/wn/${imageName1}@2x.png`
     dateDay1.innerHTML = city.list[0].dt_txt.substring(0,10);
     forecastDay1.innerHTML = city.list[0].weather[0].description;
     maxDay1.innerHTML =`Max ${city.list[0].main.temp_max}` ;
@@ -149,7 +149,7 @@ displayForecast = (city) =>{
 
 
     const imageName2 = city.list[8].weather[0].icon;
-    iconDay2.src = `http://openweathermap.org/img/wn/${imageName2}@2x.png`
+    iconDay2.src = `https://openweathermap.org/img/wn/${imageName2}@2x.png`
     dateDay2.innerHTML = city.list[8].dt_txt.substring(0,10);
     forecastDay2.innerHTML = city.list[8].weather[0].description;
     maxDay2.innerHTML =`Max ${city.list[8].main.temp_max}` ;
@@ -158,7 +158,7 @@ displayForecast = (city) =>{
     humidityDay2.innerHTML = `Humidity: ${city.list[8].main.humidity}%`;
 
     const imageName3 = city.list[16].weather[0].icon;
-    iconDay3.src = `http://openweathermap.org/img/wn/${imageName3}@2x.png`
+    iconDay3.src = `https://openweathermap.org/img/wn/${imageName3}@2x.png`
     dateDay3.innerHTML = city.list[16].dt_txt.substring(0,10);
     forecastDay3.innerHTML = city.list[16].weather[0].description;
     maxDay3.innerHTML =`Max ${city.list[16].main.temp_max}` ;
@@ -167,7 +167,7 @@ displayForecast = (city) =>{
     humidityDay3.innerHTML = `Humidity: ${city.list[16].main.humidity}%`;
 
     const imageName4 = city.list[24].weather[0].icon;
-    iconDay4.src = `http://openweathermap.org/img/wn/${imageName4}@2x.png`
+    iconDay4.src = `https://openweathermap.org/img/wn/${imageName4}@2x.png`
     dateDay4.innerHTML = city.list[24].dt_txt.substring(0,10);
     forecastDay4.innerHTML = city.list[24].weather[0].description;
     maxDay4.innerHTML =`Max ${city.list[24].main.temp_max}` ;
@@ -176,7 +176,7 @@ displayForecast = (city) =>{
     humidityDay4.innerHTML = `Humidity: ${city.list[24].main.humidity}%`;
 
     const imageName5 = city.list[32].weather[0].icon;
-    iconDay5.src = `http://openweathermap.org/img/wn/${imageName5}@2x.png`
+    iconDay5.src = `https://openweathermap.org/img/wn/${imageName5}@2x.png`
     dateDay5.innerHTML = city.list[32].dt_txt.substring(0,10);
     forecastDay5.innerHTML = city.list[32].weather[0].description;
     maxDay5.innerHTML =`Max ${city.list[32].main.temp_max}` ;
@@ -221,7 +221,7 @@ searchForm.addEventListener("submit", (e) =>{
 
 //Fetch function to get most of the information in the main card
 let getCityWeather = async(city) => {
-    const cityURL = "http://api.openweathermap.org/data/2.5/weather";
+    const cityURL = "https://api.openweathermap.org/data/2.5/weather";
     let cityKeyAPI = `?q=${city}&units=metric&appid=${keyAPI}`;
 
     const response = await fetch(cityURL + cityKeyAPI);
@@ -234,7 +234,7 @@ getCityWeather();
 
 //Fetch function to get specific data UVIndex, needs coordinates
 let getUVI = async(lat, lon) => {
-    const oneCallURL = "http://api.openweathermap.org/data/2.5/onecall";
+    const oneCallURL = "https://api.openweathermap.org/data/2.5/onecall";
     let cityKeyAPI = `?lat=${lat}&lon=${lon}&exclude=minutely,hourly,daily&units=metric&appid=${keyAPI}`;
 
     const response = await fetch(oneCallURL + cityKeyAPI);
@@ -248,7 +248,7 @@ getUVI();
 
 //Fetch function to get Forecast data
 let getForecast = async(city) => {
-    const forecastURL = "http://api.openweathermap.org/data/2.5/forecast";
+    const forecastURL = "https://api.openweathermap.org/data/2.5/forecast";
     let cityKeyAPI = `?q=${city}&units=metric&appid=${keyAPI}`;
 
     const response = await fetch(forecastURL + cityKeyAPI);
